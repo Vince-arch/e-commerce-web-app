@@ -1,28 +1,46 @@
-import React from 'react'
-import SearchIcon from '@mui/icons-material/Search'
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
-import {Link} from "react-router-dom"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Facebook, Instagram, Twitter } from '@mui/icons-material';
 
 const Footer = () => {
   return (
-    <div name="wrapper" className='flex  bg-blue-200 '>
-      <div name="left" className='flex flex-row items-center'>
-        <img src='/img/logo.png' alt='' className='w-16 h-16' />
-        <Link to="/">Dee's Apparel</Link>
+    <div className="flex flex-col lg:flex-row p-6 bg-gray-700 text-slate-200">
+      <div className="flex flex-col items-center mb-4 lg:mb-0">
+        <Link to="/" className="pb-2 text-lg font-bold">
+          Dee's Apparel
+        </Link>
+        <p className="text-sm">Copyright © 2024</p>
       </div>
-      <div name="center" className="flex-grow flex justify-center items-center">
-        <p>Hi</p>
+
+      <div className="flex-grow flex flex-col lg:flex-row justify-center space-x-8">
+        <div className="flex flex-col items-center mb-4 lg:mb-0">
+          <Link to="/" className="text-sm font-semibold mb-2">
+            About Us
+          </Link>
+          <p className="text-xs text-center">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
+          </p>
+        </div>
+        <div className="flex flex-col items-center">
+          <Link to="/" className="text-sm font-semibold mb-2">
+            Contact Us
+          </Link>
+          <p className="text-xs text-center">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
+          </p>
+        </div>
       </div>
-      <div name="right" className='flex flex-row items-center space-x-4'>
-        <Link to="/" className="">About</Link>
-        <Link to="/" className="p-4">Contact</Link>
-        <div name="icon" className="pr-5 relative">
-          <ShoppingCartOutlinedIcon />
-          <span className="bg-red-500 text-white rounded-full absolute bottom-3 right-2 px-2">0</span>
-      </div>
+
+      <div className=" flex flex-col items-center">
+        <div className="text-sm font-semibold mb-2">Stay connected</div>
+        <div className="flex flex-row space-x-4">
+          <Facebook fontSize="large" color="primary" />
+          <Instagram fontSize="large" sx={{ color: '#E1306C' }} />
+          <Twitter fontSize="large" sx={{ color: '#1DA1F2' }} />
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
