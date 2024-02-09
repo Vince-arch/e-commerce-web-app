@@ -4,7 +4,7 @@ import { Facebook, Instagram, Twitter } from '@mui/icons-material';
 
 const Footer = () => {
   return (
-    <div className="flex flex-col lg:flex-row p-6 bg-gray-700 text-slate-200">
+    <div name='container' className="flex flex-col lg:flex-row p-8 h-fit  bg-gray-700 text-slate-200">
       <div className="flex flex-col items-center mb-4 lg:mb-0">
         <Link to="/" className="pb-2 text-lg font-bold">
           Dee's Apparel
@@ -12,22 +12,28 @@ const Footer = () => {
         <p className="text-sm">Copyright © 2024</p>
       </div>
 
-      <div className="flex-grow flex flex-col lg:flex-row justify-center space-x-8">
-        <div className="flex flex-col items-center mb-4 lg:mb-0">
-          <Link to="/" className="text-sm font-semibold mb-2">
+      <div name='pages' className="flex-grow flex flex-col items-center justify-center ">
+       <span>Links</span>
+       <div className="flex flex-col ">
+          <Link to="/" className=" text-sm font-semibold mb-2">
+            Home
+          </Link>
+        </div>
+       <div className="flex flex-col ">
+          <Link to="/" className=" text-sm font-semibold mb-2">
+            Products
+          </Link>
+        </div>
+        <div className="flex flex-col  lg:mb-0 ">
+          <Link to="/" className=" text-sm font-semibold mb-2 ">
             About Us
           </Link>
-          <p className="text-xs text-center">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
-          </p>
         </div>
-        <div className="flex flex-col items-center">
-          <Link to="/" className="text-sm font-semibold mb-2">
+        <div className="flex flex-col ">
+          <Link to="/" className=" text-sm font-semibold mb-2">
             Contact Us
           </Link>
-          <p className="text-xs text-center">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
-          </p>
+          
         </div>
       </div>
 
