@@ -3,7 +3,7 @@ import Slide from '../components/Slide'
 import { Button, CardContent,} from '@mui/material'
 import {motion} from 'framer-motion'
 import Card from '../components/Card'
-import Navmobile from '../components/NavMobile'
+import NavBar from '../components/Navbar'
 
 const Home = () => {
   return (
@@ -20,11 +20,11 @@ const Home = () => {
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 3 }}
-      className='text-xl lg:text-6xl'
+      className='text-2xl lg:text-6xl'
     >
       We sell beautiful ladies' clothes
     </motion.h1> 
-   <div className='lg:text-xl'>
+   <div className='text-xl font-serif '>
     <motion.h1
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
@@ -40,16 +40,16 @@ const Home = () => {
           backgroundColor: '#e0459e',
         },
         
-      }} variant="contained">EXPLORE NOW</Button>
+      }} variant="contained">SHOP NOW</Button>
       </div>
       </div>
       <div name='feature-section' className='bg-slate-300 text-black text-center font-mono text-4xl'>
         <span> Featured Clothes</span>
-        <div className='flex flex-col lg:flex-row '>
+        <div className='w-30 overflow-x-hidden '>
           {/*<Slide/>*/}
         <Card/>
-        <Card/>
-        <Card/>
+        {/*<Card/>
+        <Card/>*/}
         </div>
         </div> 
     </div>

@@ -15,10 +15,12 @@
     "@mui/icons-material": "^5.15.0",
     "@mui/material": "^5.15.0",
     "@supabase/supabase-js": "^2.39.0",
+    "formik": "^2.4.5",
     "framer-motion": "^11.0.3",
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.50.1",
     "react-router-dom": "^6.21.0",
     "react-use": "^17.5.0"
   },

@@ -26,9 +26,10 @@ const NavBar = () => {
   return (
     <div
       name="wrapper"
-      className={`z-10 flex flex-row pt-5 text-slate-200 fixed w-full transition-all ${
+      className='z-10  bg-gray-500 flex flex-row pt-5 pb-2 text-white fixed w-full'
+      /*className={`z-10 flex flex-row pt-5 pb-2 text-white fixed w-full transition-all ${
         scrolling ? 'bg-gray-500 opacity-90 duration-700' : ''
-      }`}
+      }`}*/
     >
       <div name="left" className="flex flex-row items-center text-3xl">
         <img src="/img/logoo.png" alt="" className="w-16 h-16" />
@@ -44,16 +45,16 @@ const NavBar = () => {
       <Link to="/" className="p-4">
           Products
         </Link>
-        <Link to="/" className="">
+        <Link to="about" className="">
           About
         </Link>
-        <Link to="/" className="p-4">
+        <Link to="contact" className="p-4">
           Contact
         </Link>
       </div>
       <div name="icon" className="pr-10 pt-5 relative ">
           <ShoppingCartOutlinedIcon />
-          <span className="bg-red-500 text-white   rounded-full absolute bottom-7 right-7 px-2">
+          <span className="bg-red-500 text-white rounded-full absolute bottom-9 right-7 px-2">
             0
           </span>
         </div>
