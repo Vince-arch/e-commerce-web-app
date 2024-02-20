@@ -1,4 +1,4 @@
-import { Email, LocationCity, LocationCityOutlined, LocationOn, Phone, Pin } from '@mui/icons-material';
+import { Email,LocationOn, Phone } from '@mui/icons-material';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
@@ -21,6 +21,7 @@ const ContactForm = () => {
         <div className='pr-11 text-xl flex justify-center items-center'><Email style={{color:'black', fontSize:'3rem'}}/>Email</div>
         <p className='pl-28' > deeapparel@gmail.com</p>
       </div>
+    
     <div name='section-2' className='  flex items-center justify-center'>
       <div name='card' className=' bg-gray-300 h-auto w-4/5 p-5 shadow-2xl border-gray-200 shadow-gray-500'>
     <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto">
@@ -30,6 +31,7 @@ const ContactForm = () => {
         <input type="text" id="name" {...register('name', { required: 'Name is required' })} className="form-input mt-1 block w-full" />
         {errors.name && <p className="text-red-500">{errors.name.message}</p>}
       </div>
+
       <div className="mb-4">
         <label htmlFor="email" className="block text-gray-700">Email</label>
         <input type="email" id="email" {...register('email', { required: 'Email is required', pattern: { value: /\S+@\S+\.\S+/, message: 'Invalid email address' } })} className="form-input mt-1 block w-full" />

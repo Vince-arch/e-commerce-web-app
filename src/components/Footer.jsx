@@ -20,7 +20,7 @@ const Footer = () => {
           </Link>
         </div>
        <div className="flex flex-col ">
-          <Link to="/" className=" text-sm font-semibold mb-2">
+          <Link to="products" className=" text-sm font-semibold mb-2">
             Products
           </Link>
         </div>
