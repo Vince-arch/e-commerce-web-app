@@ -25,9 +25,9 @@ const Card = () => {
   ];*/}
 
   return (
-    <div name='card' className='text-center hover:grey  p-3 m-4 flex flex-col lg:flex-row lg:justify-center'>
+    <div name='card' className='text-center hover:grey  p-3  flex flex-col lg:flex-row flex-wrap lg:justify-center'>
       {data.map((item, id) => (
-        <div key={item.id} className="flex  bg-gray-100 flex-col justify-center items-center m-2 transition duration-300 ease-in-out transform hover:scale-105 ">
+        <div key={item.id} className="flex  bg-gray-200 flex-col justify-center items-center m-2 lg:mb-3 transition duration-300 ease-in-out transform hover:scale-105 ">
           <img src={item.img} className='transition duration-500 ease-in-out transform hover:scale-90 p-1 rounded-md w-full lg:w-96 lg:h-96 object-cover' alt={item.title}></img>
           <h2 className='text-base'>{item.title}</h2>
           <h2 className='text-base'>Ksh.{item.price}</h2>
