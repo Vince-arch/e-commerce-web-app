@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../components/Card';
+import Product from './Product'
 import client from '../../lib/client'
 import { useEffect, useState } from 'react';
 
@@ -41,7 +42,7 @@ const Products = () => {
     <img className='h-80 w-full ' src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFzaGlvbnxlbnwwfDB8MHx8fDA%3D"></img>
     </div>
     </div>
-    <div className=''>{/*<Card/>*/}</div>
+    <div className='text-black'>{products?.map((product)=> <Product key= {product._id} product={product}/>)}{/*{<Card/>*/}</div>
   </div>
     )
 }

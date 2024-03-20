@@ -26,14 +26,15 @@ const Card = () => {
 
   return (
     <div name='card' className='text-center hover:grey  p-3  flex flex-col lg:flex-row flex-wrap lg:justify-center'>
-      {data.map((item, id) => (
+      
+      {/*{data.map((item, id) => (
         <div key={item.id} className="flex  bg-gray-200 flex-col justify-center items-center m-2 lg:mb-3 transition duration-300 ease-in-out transform hover:scale-105 ">
           <img src={item.img} className='transition duration-500 ease-in-out transform hover:scale-90 p-1 rounded-md w-full lg:w-96 lg:h-96 object-cover' alt={item.title}></img>
           <h2 className='text-base'>{item.title}</h2>
           <h2 className='text-base'>Ksh.{item.price}</h2>
-          <span className='bg-gray-400 hover:bg-gray-500 w-72 m-3  px-4 py-2 rounded text-black text-lg transition duration-200 ease-in-out transform hover:scale-100'>Add</span>
+      <span className='bg-gray-400 hover:bg-gray-500 w-72 m-3  px-4 py-2 rounded text-black text-lg transition duration-200 ease-in-out transform hover:scale-100'>Add</span>
         </div>
-      ))}
+      ))}*/}
     </div>
   );
 };
