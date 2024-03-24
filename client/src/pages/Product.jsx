@@ -12,7 +12,7 @@ const Product = ({product:{ image, name, slug, price}}) => {
             src={urlFor(image && image[0])}
           />
           <p name='product-name' className=''>{name}</p>
-          <p name='product-price' className=''>{price}</p>
+          <p name='product-price' className=''>ksh.{price}</p>
         </div>
       </Link>
       
