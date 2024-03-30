@@ -43,7 +43,8 @@ const Products = () => {
     </div>
     </div>
     <div name='body' className=''>
-    <div className='text-black flex flex-row flex-wrap  gap-5 p-2'>{products?.map((product)=> <Product key= {product._id} product={product}/>)}{/*{<Card/>*/}</div>
+    <div className='text-black flex flex-row flex-wrap  gap-5 p-2 '>
+      {products?.map((product)=> <Product key= {product._id} product={product}/>)}</div>
     </div>
   </div>
     )
