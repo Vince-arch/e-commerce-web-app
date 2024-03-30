@@ -5,7 +5,7 @@ import Card from '../components/Card'
 
 const Product = ({product:{ image, name, slug, price}}) => {
   return (
-    <div className='text-center hover:grey  p-3  flex flex-col lg:flex-row flex-wrap lg:justify-center '>
+    <div className='text-center hover:grey p-3 flex flex-col lg:flex-row flex-wrap lg:justify-center '>
       <Link href={'./product/${slug.current}'}>
         <div >
           <img className='h-72 w-72'
