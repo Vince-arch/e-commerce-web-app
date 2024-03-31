@@ -1,4 +1,4 @@
-import React from 'react';
+{/*import React from 'react';
 import { Button } from '@mui/material';
 import data from './List.json';
 
@@ -22,21 +22,22 @@ const Card = () => {
       price:800,
       img: "https://images.unsplash.com/photo-1533435137002-455932c8538f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
-  ];*/}
+  ];
 
   return (
     <div name='card' className='text-center hover:grey  p-3  flex flex-col lg:flex-row flex-wrap lg:justify-center'>
       
-      {/*{data.map((item, id) => (
+      {data.map((item, id) => (
         <div key={item.id} className="flex  bg-gray-200 flex-col justify-center items-center m-2 lg:mb-3 transition duration-300 ease-in-out transform hover:scale-105 ">
           <img src={item.img} className='transition duration-500 ease-in-out transform hover:scale-90 p-1 rounded-md w-full lg:w-96 lg:h-96 object-cover' alt={item.title}></img>
           <h2 className='text-base'>{item.title}</h2>
           <h2 className='text-base'>Ksh.{item.price}</h2>
       <span className='bg-gray-400 hover:bg-gray-500 w-72 m-3  px-4 py-2 rounded text-black text-lg transition duration-200 ease-in-out transform hover:scale-100'>Add</span>
         </div>
-      ))}*/}
+      ))}
     </div>
   );
 };
 
 export default Card;
+*/}
