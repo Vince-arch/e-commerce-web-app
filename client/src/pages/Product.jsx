@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { urlFor } from '../../lib/client'
-import Card from '../components/Card'
+//import Card from '../components/Card'
 import { Button } from '@mui/material';
 
 const Product = ({product:{ image, name, slug, price}}) => {
