@@ -8,7 +8,7 @@ const Product = ({product:{ image, name, slug, price}}) => {
   return (
     <div className='text-center hover:grey p-3 flex flex-col lg:flex-row flex-wrap lg:justify-center '>
       <Link href={'./product/${slug.current}'}>
-        <div name= 'card' className='rounded-xl hover:scale-125 duration-100 '>
+        <div name= 'card' className='rounded-xl hover:scale-125 duration-500 '>
           <img className='h-72 w-72 '
             src={urlFor(image && image[0])}
           />
