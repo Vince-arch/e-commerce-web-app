@@ -2,7 +2,7 @@ import React from 'react'
 import Slide from '../components/Slide'
 import { Button, CardContent,} from '@mui/material'
 import {motion} from 'framer-motion'
-//import Card from '../components/Card'
+
 
 
 const About = () => {
