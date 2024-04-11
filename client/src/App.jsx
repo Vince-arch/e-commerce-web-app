@@ -12,7 +12,7 @@ import Products from "./pages/Products";
 import About from "./pages/About";
 import Product from "./pages/Product";
 import Contact from "./pages/Contact"
-
+import ProductDetails from "./pages/[slug]"
 
 const Layout = () => {
   return (
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: "products",
+        path: "products/",
         element: <Products />
       },
       {

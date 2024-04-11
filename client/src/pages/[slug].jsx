@@ -2,7 +2,9 @@ import React from "react";
 
 const ProductDetails = () => {
     return (
-        <div className="pt-56">Product</div>
+        <div>
+        product
+        </div>
     )
 }
 

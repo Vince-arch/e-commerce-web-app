@@ -11,7 +11,7 @@ const Products = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const query = '*[_type == "product"]'; 
+        const query = `*[_type == "product"]`; 
         const products = await client.fetch(query);
         setProducts(products);
       } catch (error) {
