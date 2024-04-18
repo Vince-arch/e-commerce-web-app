@@ -1,9 +1,15 @@
 import React from "react";
+import client, {urlFor} from '../../lib/client';
 
 const ProductDetails = () => {
     return (
-        <div className="pt-56">
-        product
+        <div>
+            <div className="product-detail-container">
+                <div>
+                    <div name="image-container"></div>
+                        <img src="" />
+                </div>
+            </div>
         </div>
     )
 }
