@@ -16,8 +16,8 @@ import ProductDetails from "./pages/[slug]"
 
 const Layout = () => {
   return (
-    <div className="app">
-      <Navbar />
+    <div>
+    <div className="pb-24">  < Navbar /></div>
       <Outlet />
       <Footer />
     </div>
