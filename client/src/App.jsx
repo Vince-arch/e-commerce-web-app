@@ -1,23 +1,20 @@
 import React from "react";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./index.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import About from "./pages/About";
-import Product from "./pages/Product";
-import Contact from "./pages/Contact"
-import ProductDetails from "./pages/[slug]"
+import Contact from "./pages/Contact";
+import ProductDetailPage from "./pages/ProductDetailPage"; // Renamed ProductDetails to ProductDetailPage
 
 const Layout = () => {
   return (
     <div>
-    <div className="pb-24">  < Navbar /></div>
+      <div className="pb-24">
+        <Navbar />
+      </div>
       <Outlet />
       <Footer />
     </div>
@@ -39,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: "product/:slug",
-        element: <ProductDetails />
+        element: <ProductDetailPage /> // Changed to ProductDetailPage
       },
       {
         path: "about",
@@ -47,7 +44,7 @@ const router = createBrowserRouter([
       },
       {
         path: "contact",
-        element: <Contact/>
+        element: <Contact />
       },
     ]
   }
