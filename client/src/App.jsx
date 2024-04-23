@@ -8,16 +8,18 @@ import Products from "./pages/Products";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProductDetailPage from "./pages/ProductDetailPage"; // Renamed ProductDetails to ProductDetailPage
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
+///import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 
 const Layout = () => {
   return (
-    <div>
+    <ShoppingCartProvider>
       <div className="pb-24">
         <Navbar />
       </div>
       <Outlet />
       <Footer />
-    </div>
+    </ShoppingCartProvider>
   );
 };
 
@@ -51,11 +53,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+{/*<ShoppingCartProvider>*/}
   return (
     <div>
       <RouterProvider router={router} />
     </div>
   );
+  {/*</ShoppingCartProvider>*/}
 }
 
 export default App;
