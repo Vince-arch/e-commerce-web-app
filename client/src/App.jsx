@@ -13,13 +13,13 @@ import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 
 const Layout = () => {
   return (
-    <ShoppingCartProvider>
+    <div>
       <div className="pb-24">
         <Navbar />
       </div>
       <Outlet />
       <Footer />
-    </ShoppingCartProvider>
+    </div>
   );
 };
 
