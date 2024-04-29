@@ -2,6 +2,7 @@ import client from '../../lib/client'; // Assuming you have a client module for 
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useShoppingCart } from '../context/ShoppingCartContext';
 const ProductDetailPage = () => {
   const { slug } = useParams(); // Access the slug parameter from the URL
   const [product, setProduct] = useState(null);
@@ -30,6 +31,8 @@ const ProductDetailPage = () => {
     return <div>Loading...</div>; // Placeholder for loading state
   }
 
+  const { addItemToCart, removeItemFromCart} = useShoppingCart
+
   return (
     <div className="container mx-auto mt-8">
       <div className="grid grid-cols-2 gap-4">
@@ -42,7 +45,7 @@ const ProductDetailPage = () => {
   <h2 className="text-3xl font-bold mb-2 text-gray-900">{product.name}</h2>
   <p className="text-lg text-gray-700 mb-4">{product.details}</p>
   <p className="text-xl font-bold text-gray-800">Price: Ksh {product.price}</p>
-  <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+  <button onClick={()=>addItemToCart} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
     Add to Cart
   </button>
 </div>

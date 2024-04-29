@@ -2,9 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { urlFor } from '../../lib/client'
 import { Button } from '@mui/material';
+import { useShoppingCart } from '../context/ShoppingCartContext';
 //import Card from '../components/Card'
 
 const Product = ({product:{ image, name, slug, price}}) => {
+
+  const { addItemToCart, removeItemFromCart} = useShoppingCart
+
   return (
     <div className='text-center hover:grey p-3 flex flex-col lg:flex-row flex-wrap lg:justify-center '>
       <Link to={`/product/${slug.current}`}>
@@ -16,7 +20,7 @@ const Product = ({product:{ image, name, slug, price}}) => {
           <p name='product-name' className='text-lg '>{name} </p>
           <p name='product-price' className=' rounded-b-md h-8 text-lg'>ksh.{price}</p>
           </div>
-          <Button variant='contained' size='small' style={{width: '280px'}} >buy now</Button>
+          <Button onClick={addItemToCart} variant='contained' size='small' style={{width: '280px'}} >buy now</Button>
         </div>
       </Link>
       

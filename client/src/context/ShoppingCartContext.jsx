@@ -11,7 +11,23 @@ export const useShoppingCart = () => {
 
 // Provider component
 export const ShoppingCartProvider = ({ children }) => {
+  
+  const [isOpen, setIsOpen] = useState(false)
+  
   const [cartItems, setCartItems] = useState([]);
+
+
+  const itemQuantity = cartItems.reduce(
+    (quantity, item) => item.quantity + quantity, 0
+  )
+
+    const openCart = () => setIsOpen(true);
+    const closeCart = () => setIsOpen(false);
+
+    //function to get item quantity
+    const getItemQuantity = ()=>{
+     cartItems.find(item => item.id === id)?.quantity || 0
+    }
 
   // Function to add an item to the cart
   const addItemToCart = (product) => {
@@ -25,6 +41,9 @@ export const ShoppingCartProvider = ({ children }) => {
 
   const contextValue = {
     cartItems,
+    openCart, 
+    closeCart,
+    getItemQuantity,
     addItemToCart,
     removeItemFromCart,
   };

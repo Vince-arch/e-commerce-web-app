@@ -3,6 +3,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Link } from 'react-router-dom';
 import NavMobile from './NavMobile';
+import ShoppingCart from './ShoppingCart';
 
 const NavBar = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -52,12 +53,13 @@ const NavBar = () => {
           Contact
         </Link>
       </div>
-      <div name="icon" className="pr-10 pt-5 relative ">
+      <ShoppingCart/>
+      {/*<div name="icon" className="pr-10 pt-5 relative ">
           <ShoppingCartOutlinedIcon />
           <span className="bg-red-500 text-white rounded-full absolute bottom-9 right-7 px-2">
-            0
+            
           </span>
-        </div>
+    </div>*/}
         <div className='flex items-center pr-2'>
           <NavMobile/>
         </div>
