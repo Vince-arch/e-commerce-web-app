@@ -16,6 +16,7 @@ const About = () => {
           <div name='section-2'className='flex flex-col bg:flex-row'>
           <span className='flex pl-5 flex-col text-2xl font-serif'>ABOUT DEE'S APPAREL</span>
           <p>We are an apparel company</p>
+          <p>We sell beautifully designed clothes at affordable prices.</p>
           </div>
           </div>
         </div>

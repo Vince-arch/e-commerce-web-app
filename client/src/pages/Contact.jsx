@@ -12,7 +12,7 @@ const ContactForm = () => {
   return (
     <div className='bg-white h-auto pb-20'>
        <div name='header' className='pt-32 flex justify-center text-5xl font-sans pb-3 text-slate-500'> CONTACT US</div>
-    <div name='background' className=' pt-10  grid grid-cols-1 lg:grid  lg:grid-cols-2'>
+    <div name='background' className=' pt-10  grid grid-cols-1 justify-center'>
       <div name='section-1' className='b flex flex-col items-center'>
         <div className='text-xl flex justify-center items-center'><LocationOn className=''style={{color:'black', fontSize:'3rem'}}/>Location</div> 
         <p className='flex pl-6 pb-3'>Nakuru</p>
@@ -22,7 +22,7 @@ const ContactForm = () => {
         <p className='pl-28' > deeapparel@gmail.com</p>
       </div>
     
-    <div name='section-2' className='  flex items-center justify-center'>
+    {/*<div name='section-2' className='  flex items-center justify-center'>
       <div name='card' className=' bg-gray-300 h-auto w-4/5 p-5 shadow-2xl border-gray-200 shadow-gray-500'>
     <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto">
 
@@ -67,9 +67,9 @@ const ContactForm = () => {
       <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
     </form>
     </div>
-    </div>
-    </div>
-    </div>
+      </div>*/}
+      </div>
+      </div>
   );
 };
 

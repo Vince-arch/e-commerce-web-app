@@ -1,21 +1,21 @@
 [
         {
           "id": 1,
-          "title": "one",
-          "price":2000,
-          "img": "https://images.unsplash.com/photo-1534126416832-a88fdf2911c2?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          "title": "dress",
+          "price":1000,
+          "img": "/public/img/dress-1.jpg"
         },
         {
           "id": 2,
-          "title": "two",
-          "price":3000,
-          "img": "https://images.unsplash.com/photo-1522512115668-c09775d6f424?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJsYWNrJTIwd29tYW4lMjBmYXNoaW9ufGVufDB8fDB8fHww"
+          "title": "dress",
+          "price":500,
+          "img": "/public/img/dress-4.jpg"
         },
         {
           "id": 3,
-          "title": "three",
-          "price":800,
-          "img": "https://images.unsplash.com/photo-1533435137002-455932c8538f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          "title": "dress",
+          "price":500,
+          "img": "/public/img/dress-9.jpg"
         },
         {
           "id": 4,

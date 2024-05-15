@@ -53,7 +53,7 @@ const NavBar = () => {
           Contact
         </Link>
       </div>
-      <ShoppingCart/>
+      {/*<ShoppingCart/>*/}
       {/*<div name="icon" className="pr-10 pt-5 relative ">
           <ShoppingCartOutlinedIcon />
           <span className="bg-red-500 text-white rounded-full absolute bottom-9 right-7 px-2">

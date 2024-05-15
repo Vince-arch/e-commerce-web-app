@@ -45,9 +45,9 @@ const ProductDetailPage = () => {
   <h2 className="text-3xl font-bold mb-2 text-gray-900">{product.name}</h2>
   <p className="text-lg text-gray-700 mb-4">{product.details}</p>
   <p className="text-xl font-bold text-gray-800">Price: Ksh {product.price}</p>
-  <button onClick={()=>addItemToCart} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+  {/*<button onClick={()=>addItemToCart} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
     Add to Cart
-  </button>
+  </button>*/}
 </div>
 
       </div>

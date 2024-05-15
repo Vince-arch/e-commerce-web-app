@@ -11,7 +11,7 @@ const Product = ({product:{ image, name, slug, price}}) => {
 
   return (
     <div className='text-center hover:grey p-3 flex flex-col lg:flex-row flex-wrap lg:justify-center '>
-      <Link to={`/product/${slug.current}`}>
+      
         <div name= 'card' className=' '>
           <img className='h-72 w-72'
             src={urlFor(image && image[0])}
@@ -20,9 +20,11 @@ const Product = ({product:{ image, name, slug, price}}) => {
           <p name='product-name' className='text-lg '>{name} </p>
           <p name='product-price' className=' rounded-b-md h-8 text-lg'>ksh.{price}</p>
           </div>
-          <Button onClick={addItemToCart} variant='contained' size='small' style={{width: '280px'}} >buy now</Button>
+          <Link to={`/product/${slug.current}`}>
+          <Button onClick={addItemToCart} variant='contained' size='small' style={{width: '280px'}} >Show More</Button>
+          </Link>
         </div>
-      </Link>
+      
       
     </div>
   )
