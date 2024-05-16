@@ -3,19 +3,19 @@
           "id": 1,
           "title": "dress",
           "price":1000,
-          "img": "/public/img/dress-1.jpg"
+          "img": "/img/dress-1.jpg"
         },
         {
           "id": 2,
           "title": "dress",
           "price":500,
-          "img": "/public/img/dress-4.jpg"
+          "img": "/img/dress-4.jpg"
         },
         {
           "id": 3,
           "title": "dress",
           "price":500,
-          "img": "/public/img/dress-9.jpg"
+          "img": "/img/dress-9.jpg"
         },
         {
           "id": 4,
