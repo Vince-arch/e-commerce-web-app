@@ -8,7 +8,7 @@ const productSchema = new mongoose.Schema({
     image:{type: String, required: true}
 });
 
-//creating and exporting the model
+//creating the model
 const Product = mongoose.model('product', productSchema);
 
 export default Product;
