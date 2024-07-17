@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 //connect to MongoDB
-mongoose.connect(config.mongoDBURl, {
+mongoose.connect(config.mongoDBURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
