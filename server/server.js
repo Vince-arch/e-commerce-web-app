@@ -4,7 +4,6 @@ import cors from "cors";
 import config from "./config.js";
 import mongoose from 'mongoose';
 
-
 //Initializing express app
 const app = express();
 
