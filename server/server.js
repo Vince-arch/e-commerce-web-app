@@ -7,6 +7,8 @@ import mongoose from 'mongoose';
 //Initializing express app
 const app = express();
 
+console.log('Config:', config)
+
 //Middleware
 app.use(cors());
 app.use(express.json());
