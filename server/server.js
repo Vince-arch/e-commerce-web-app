@@ -3,6 +3,7 @@ import express from 'express';
 import cors from "cors";
 import config from "./config.js";
 import mongoose from 'mongoose';
+import productRoutes from './routes/products.js'
 
 //Initializing express app
 const app = express();
@@ -24,6 +25,7 @@ mongoose.connect(config.mongoDBURI, {
 app.get('/', (req,res) =>{
     res.send('Hello World')
 });
+app.use('/products', productRoutes)
 
 app.listen(config.port, () => {
     console.log(`server is running on port:${config.port}`)
