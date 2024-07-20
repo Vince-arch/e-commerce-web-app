@@ -7,7 +7,7 @@ dotenv.config();
 console.log( process.env.PORT)
 
 const config = {
-    port: process.env.PORT, //|| 5050,
+    port: process.env.PORT || 5050,
     mongoDBURI: process.env.mongoDBURL
   };
   
