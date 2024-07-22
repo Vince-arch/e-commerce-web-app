@@ -14,6 +14,7 @@ router.get('/', async(req, res) =>{
 });
 
 //Getting a single product by ID
+//to add unique id generator
 router.get('/:id', async (req, res) => {
     try{
         const product = await Product.findById(req.params.id);
