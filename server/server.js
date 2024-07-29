@@ -23,6 +23,19 @@ app.get('/', (req,res) =>{
 });
 app.use('/products', productRoutes)
 
+//get images
+app.get('/images/:id', async (req, res) => {
+  try {
+      const image = await Image.findById(req.params.id);
+      if (!image) return res.status(404).send('Image not found');
+
+      res.contentType(image.img.contentType);
+      res.send(image.img.data);
+  } catch (err) {
+      res.status(500).send('Server error');
+  }
+});
+
 app.listen(config.port, () => {
     console.log(`server is running on port:${config.port}`)
 })
